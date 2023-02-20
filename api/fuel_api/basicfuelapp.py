@@ -30,5 +30,6 @@ def get_data():
     # response_data = []
     # for city, prices in data.items():
     #     response_data.append({'city': city, 'petrol': prices['petrol'], 'diesel': prices['diesel']})
-   
+    #return jsonify(response_data)
+    
     return jsonify(data)
