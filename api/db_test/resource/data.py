@@ -80,4 +80,21 @@ class DataInterval(MethodView):
             }
             result.append(temp)
             temp = {}
-        return jsonify(result)        
+        return jsonify(result)
+
+@blp.route("/esp/data")
+class DataForTesting(MethodView):
+    data = {
+        "data": "start#SuperZIG23#4#false#104#90#true#true"
+        }
+
+    def get(self):
+        return self.data
+
+    def put(self):
+        updated_data = request.json
+        self.data.update(updated_data)
+
+        return {"message": "Data updated successfully."}
+
+

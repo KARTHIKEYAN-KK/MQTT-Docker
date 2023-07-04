@@ -23,13 +23,13 @@ def get_data():
         p_cols = p_row.find_all('td')
         d_cols = d_row.find_all("td")
         city = p_cols[0].text.strip()
-        petrol_price = p_cols[1].text.strip()
+        petrol_price = re.sub(r'[^\d.]+', '', (p_cols[1].text.strip()))
         diesel_price = d_cols[1].text.strip()
         data[city] = {'petrol': petrol_price, 'diesel': diesel_price}
     
-    # response_data = []
-    # for city, prices in data.items():
-    #     response_data.append({'city': city, 'petrol': prices['petrol'], 'diesel': prices['diesel']})
-    #return jsonify(response_data)
+    response_data = []
+    for city, prices in data.items():
+        response_data.append({'city': city, 'petrol': prices['petrol'], 'diesel': prices['diesel']})
+    return jsonify(response_data)
     
-    return jsonify(data)
+    # return jsonify(data)

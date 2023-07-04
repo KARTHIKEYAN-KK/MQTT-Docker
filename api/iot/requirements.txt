@@ -1,0 +1,11 @@
+flask
+flask-smorest
+Flask-SQLAlchemy
+psycopg2
+pytz
+bs4
+requests
+SQLAlchemy
+marshmallow
+passlib
+firebase-admin

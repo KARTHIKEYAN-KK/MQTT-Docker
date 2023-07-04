@@ -4,6 +4,7 @@ from flask_smorest import Blueprint, abort
 from schemas import CityFuelPricesSchema, AllCityFuelPricesSchema
 import requests
 from bs4 import BeautifulSoup
+import re
 
 blp = Blueprint("Fuel Price details", __name__, description="Fuel prices of every cities in India")
 
@@ -28,8 +29,8 @@ class CityFuelData(MethodView):
             p_cols = p_row.find_all('td')
             d_cols = d_row.find_all("td")
             cities = p_cols[0].text.strip()
-            petrol_price = p_cols[1].text.strip()
-            diesel_price = d_cols[1].text.strip()
+            petrol_price = re.sub(r'[^\d.]+', '', (p_cols[1].text.strip()))
+            diesel_price = re.sub(r'[^\d.]+', '', (d_cols[1].text.strip()))
             if cities.lower() == city.lower():
                 data = {'city': cities, 'petrol': petrol_price, 'diesel': diesel_price}
                 break
@@ -60,8 +61,13 @@ class AllCityFuelData(MethodView):
             p_cols = p_row.find_all('td')
             d_cols = d_row.find_all("td")
             cities = p_cols[0].text.strip()
-            petrol_price = p_cols[1].text.strip()
-            diesel_price = d_cols[1].text.strip()
+            petrol_price = re.sub(r'[^\d.]+', '', (p_cols[1].text.strip()))
+            diesel_price = re.sub(r'[^\d.]+', '', (d_cols[1].text.strip()))
             data[cities] = {'petrol': petrol_price, 'diesel': diesel_price}
 
-        return jsonify(data)
+        # return jsonify(data)
+
+        response_data = []
+        for city, prices in data.items():
+            response_data.append({'city': city, 'petrol': prices['petrol'], 'diesel': prices['diesel']})
+        return jsonify(response_data)

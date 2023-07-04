@@ -9,7 +9,7 @@ import psycopg2
 # )
 
 conn = psycopg2.connect(
-    host="54.236.26.254",
+    host="13.233.178.236",
     port=5001,
     database="postgres",
     user="postgres",
