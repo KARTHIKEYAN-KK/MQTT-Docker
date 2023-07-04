@@ -96,4 +96,3 @@ class DataForTesting(MethodView):
         self.data.update(updated_data)
 
         return {"message": "Data updated successfully."}
-
