@@ -97,4 +97,3 @@ class DataForTesting(MethodView):
 
         return {"message": "Data updated successfully."}
 
-
