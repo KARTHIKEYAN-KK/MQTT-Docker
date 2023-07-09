@@ -6,6 +6,7 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 import re
+import html
 
 rss_url="http://feeds.feedburner.com/Hindu_Tamil_tamilnadu"
 
@@ -16,7 +17,10 @@ def extract_text_from_html(html_content):
     cleanr = re.compile('<.*?>')
     clean_text = re.sub(cleanr, '', html_content)
     clean_text = clean_text.replace('\n\n', ' ')
-    return clean_text.strip()
+    # clean_text = clean_text.replace('&amp;#39;', "'")
+    # clean_text = clean_text.replace("''", '"')
+    decoded_text = html.unescape(html.unescape(clean_text))
+    return decoded_text.strip()
 
 def extract_image_url(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
