@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_smorest import Api
 
-from resource.fuel import blp as FuelBlueprint
 from resources.hindu_tamil import blp as HinduTamilTamilnaduBlueprint
 
 app = Flask(__name__)
