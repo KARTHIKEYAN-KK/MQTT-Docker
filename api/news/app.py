@@ -3,6 +3,7 @@ from flask_smorest import Api
 from flask_cors import CORS
 
 from resources.hindu_tamil import blp as HinduTamilTamilnaduBlueprint
+from resources.hex_file import blp as HelxFileBlueprint
 
 app = Flask(__name__)
 
@@ -19,6 +20,7 @@ api = Api(app)
 CORS(app)  # Enable CORS for all routes
 
 api.register_blueprint(HinduTamilTamilnaduBlueprint)
+api.register_blueprint(HelxFileBlueprint)
 
 # Enable CORS
 @app.before_request
