@@ -1,0 +1,134 @@
+2023-08-07 07:27:21,714 INFO  - Starting HiveMQ Community Edition Server
+2023-08-07 07:27:21,718 INFO  - HiveMQ version: 2023.6
+2023-08-07 07:27:21,718 INFO  - HiveMQ home directory: /opt/hivemq
+2023-08-07 07:27:21,722 INFO  - Log Configuration was overridden by /opt/hivemq/conf/logback.xml
+2023-08-07 07:27:22,419 INFO  - This HiveMQ ID is JXDj6
+2023-08-07 07:27:23,431 ERROR - Uncaught Error:
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at PublishPayloadRocksDBLocalPersistence.<init>(PublishPayloadRocksDBLocalPersistence.java:65)
+  at PublishPayloadRocksDBLocalPersistence.class(PublishPayloadRocksDBLocalPersistence.java:51)
+  while locating PublishPayloadRocksDBLocalPersistence
+  at PersistenceMigrationRocksDBModule.configure(PersistenceMigrationRocksDBModule.java:52)
+      \_ installed by: PersistenceMigrationModule -> PersistenceMigrationFileModule -> PersistenceMigrationRocksDBModule
+  at PublishPayloadPersistenceImpl.<init>(PublishPayloadPersistenceImpl.java:51)
+      \_ for 1st parameter
+  at PublishPayloadPersistenceImpl.class(PublishPayloadPersistenceImpl.java:40)
+  while locating PublishPayloadPersistenceImpl
+  at RetainedMessageRocksDBLocalPersistence.<init>(RetainedMessageRocksDBLocalPersistence.java:73)
+      \_ for 2nd parameter
+  at RetainedMessageRocksDBLocalPersistence.class(RetainedMessageRocksDBLocalPersistence.java:60)
+  while locating RetainedMessageRocksDBLocalPersistence
+  at PersistenceMigrationRocksDBModule.configure(PersistenceMigrationRocksDBModule.java:47)
+      \_ installed by: PersistenceMigrationModule -> PersistenceMigrationFileModule -> PersistenceMigrationRocksDBModule
+  while locating RetainedMessageLocalPersistence
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+Caused by: ExceptionInInitializerError
+	at FlushOptions.<clinit>(FlushOptions.java:14)
+	at PublishPayloadRocksDBLocalPersistence.<init>(PublishPayloadRocksDBLocalPersistence.java:52)
+	at PublishPayloadRocksDBLocalPersistence$$FastClassByGuice$$8359698.GUICE$TRAMPOLINE(<generated>)
+	at PublishPayloadRocksDBLocalPersistence$$FastClassByGuice$$8359698.apply(<generated>)
+	at DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at ConstructorInjector.provision(ConstructorInjector.java:114)
+	at ConstructorInjector.construct(ConstructorInjector.java:91)
+	at ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at FactoryProxy.get(FactoryProxy.java:60)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at ConstructorInjector.provision(ConstructorInjector.java:113)
+	at ConstructorInjector.construct(ConstructorInjector.java:91)
+	at ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at FactoryProxy.get(FactoryProxy.java:60)
+	at SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at ConstructorInjector.provision(ConstructorInjector.java:113)
+	at ConstructorInjector.construct(ConstructorInjector.java:91)
+	at ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFac2023-08-07 07:33:39,805 INFO  - Starting HiveMQ Community Edition Server
+2023-08-07 07:33:39,807 INFO  - HiveMQ version: 2023.4
+2023-08-07 07:33:39,807 INFO  - HiveMQ home directory: /opt/hivemq
+2023-08-07 07:33:39,808 INFO  - Log Configuration was overridden by /opt/hivemq/conf/logback.xml
+2023-08-07 07:33:40,355 INFO  - This HiveMQ ID is 93lnG
+2023-08-07 07:33:41,493 ERROR - Uncaught Error:
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at PublishPayloadRocksDBLocalPersistence.<init>(PublishPayloadRocksDBLocalPersistence.java:67)
+  at PublishPayloadRocksDBLocalPersistence.class(PublishPayloadRocksDBLocalPersistence.java:54)
+  while locating PublishPayloadRocksDBLocalPersistence
+  at PersistenceMigrationRocksDBModule.configure(PersistenceMigrationRocksDBModule.java:52)
+      \_ installed by: PersistenceMigrationModule -> PersistenceMigrationFileModule -> PersistenceMigrationRocksDBModule
+  at PublishPayloadPersistenceImpl.<init>(PublishPayloadPersistenceImpl.java:64)
+      \_ for 1st parameter
+  at PublishPayloadPersistenceImpl.class(PublishPayloadPersistenceImpl.java:47)
+  while locating PublishPayloadPersistenceImpl
+  at RetainedMessageRocksDBLocalPersistence.<init>(RetainedMessageRocksDBLocalPersistence.java:73)
+      \_ for 2nd parameter
+  at RetainedMessageRocksDBLocalPersistence.class(RetainedMessageRocksDBLocalPersistence.java:59)
+  while locating RetainedMessageRocksDBLocalPersistence
+  at PersistenceMigrationRocksDBModule.configure(PersistenceMigrationRocksDBModule.java:47)
+      \_ installed by: PersistenceMigrationModule -> PersistenceMigrationFileModule -> PersistenceMigrationRocksDBModule
+  while locating RetainedMessageLocalPersistence
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+Caused by: ExceptionInInitializerError
+	at FlushOptions.<clinit>(FlushOptions.java:14)
+	at PublishPayloadRocksDBLocalPersistence.<init>(PublishPayloadRocksDBLocalPersistence.java:55)
+	at PublishPayloadRocksDBLocalPersistence$$FastClassByGuice$$8214846.GUICE$TRAMPOLINE(<generated>)
+	at PublishPayloadRocksDBLocalPersistence$$FastClassByGuice$$8214846.apply(<generated>)
+	at DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at ConstructorInjector.provision(ConstructorInjector.java:114)
+	at ConstructorInjector.construct(ConstructorInjector.java:91)
+	at ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at FactoryProxy.get(FactoryProxy.java:60)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at ConstructorInjector.provision(ConstructorInjector.java:113)
+	at ConstructorInjector.construct(ConstructorInjector.java:91)
+	at ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at FactoryProxy.get(FactoryProxy.java:60)
+	at SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at ConstructorInjector.provision(ConstructorInjector.java:113)
+	at ConstructorInjector.construct(ConstructorInjector.java:91)
+	at ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at SingletonScope$1.get(SingletonScope.java:169)
+	at InternalFac2023-08-07 07:52:05,972 INFO  - Starting HiveMQ Community Edition Server
+2023-08-07 07:52:05,974 INFO  - HiveMQ version: 2023.4
+2023-08-07 07:52:05,974 INFO  - HiveMQ home directory: /opt/hivemq
+2023-08-07 07:52:05,975 INFO  - Log Configuration was overridden by /opt/hivemq/conf/logback.xml
+2023-08-07 07:52:06,581 INFO  - This HiveMQ ID is JBC3c
+2023-08-07 07:52:09,583 INFO  - Starting with file persistence mode.
+2023-08-07 07:52:10,826 INFO  - Starting HiveMQ extension system.
+2023-08-07 07:52:10,944 INFO  - Starting File RBAC extension.
+2023-08-07 07:52:11,340 INFO  - Extension "HiveMQ File Role Based Access Control Extension" version 4.5.3 started successfully.
+2023-08-07 07:52:11,392 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2023-08-07 07:52:11,433 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2023-08-07 07:52:11,448 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2023-08-07 07:52:11,449 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2023-08-07 07:52:11,450 INFO  - Started HiveMQ in 5488ms

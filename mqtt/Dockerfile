@@ -1,4 +1,4 @@
-FROM hivemq/hivemq-ce
+FROM hivemq/hivemq-ce:2023.4
 RUN rm -rf /opt/hivemq-ce-2023.4/extensions/hivemq-allow-all-extension
 # VOLUME /home/ubuntu/mqtt/hivemq-file-rbac-extension:/opt/hivemq-ce-2023.4/extensions/hivemq-file-rbac-extension
 

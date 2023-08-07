@@ -30,7 +30,7 @@ ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 ## Required for the App plugin
 ##################################################################
 
-COPY --chown=grafana:root dist /app
+# COPY --chown=grafana:root dist /app
 COPY entrypoint.sh /
 
 ## Copy Provisioning

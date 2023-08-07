@@ -1,0 +1,26 @@
+2023-08-07 07:52:12,420 - Client ID: Zed_ClientId_011691394038554, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 07:52:45,287 - Client ID: Zed_ClientId_011691394038554, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 07:52:56,411 - Client ID: Zed_ClientId_011691394774976, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:05:26,197 - Client ID: Zed_ClientId_011691394038554 session has expired at 2023-08-07 07:52:45. All persistent data for this client has been removed.
+2023-08-07 08:26:05,435 - Client ID: Zed_ClientId_011691394774976, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:26:21,658 - Client ID: Zed_ClientId_011691396779937, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:26:47,320 - Client ID: Zed_ClientId_011691396779937, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:26:57,157 - Client ID: Zed_ClientId_011691396816394, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:28:30,103 - Client ID: Zed_ClientId_011691396816394, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:28:38,632 - Client ID: Zed_ClientId_011691396916768, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:28:44,399 - Client ID: Zed_ClientId_011691396916768, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:28:53,906 - Client ID: Zed_ClientId_011691396933017, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:30:38,438 - Client ID: Zed_ClientId_011691396933017, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:30:50,437 - Client ID: Zed_ClientId_011691397048934, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:31:03,446 - Client ID: Zed_ClientId_011691397048934, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:31:10,946 - Client ID: Zed_ClientId_011691397070216, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:32:23,754 - Client ID: Zed_ClientId_011691397070216, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:33:12,280 - Client ID: Zed_ClientId_011691396779937 session has expired at 2023-08-07 08:26:47. All persistent data for this client has been removed.
+2023-08-07 08:33:29,917 - Client ID: Zed_ClientId_011691397208353, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:33:33,613 - Client ID: Zed_ClientId_011691397208353, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:33:41,466 - Client ID: Zed_ClientId_011691397220949, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:33:44,292 - Client ID: Zed_ClientId_011691396916768 session has expired at 2023-08-07 08:28:44. All persistent data for this client has been removed.
+2023-08-07 08:34:16,299 - Client ID: Zed_ClientId_011691396816394 session has expired at 2023-08-07 08:28:30. All persistent data for this client has been removed.
+2023-08-07 08:34:45,993 - Client ID: Zed_ClientId_011691397220949, IP: 122.179.59.2 disconnected ungracefully from TCP Listener on port: 1883.
+2023-08-07 08:34:46,592 - Client ID: Zed_ClientId_011691397285752, IP: 122.179.59.2, Clean Start: true, Session Expiry: 0 connected.
+2023-08-07 08:37:12,343 - Client ID: Zed_ClientId_011691394774976 session has expired at 2023-08-07 08:26:05. All persistent data for this client has been removed.
