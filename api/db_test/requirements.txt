@@ -1,6 +1,0 @@
-flask
-flask-smorest
-psycopg2
-pytz
-bs4
-requests

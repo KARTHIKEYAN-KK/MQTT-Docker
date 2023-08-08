@@ -1,6 +1,0 @@
-flask
-flask-smorest
-bs4
-requests
-flask-cors
-feedparser
