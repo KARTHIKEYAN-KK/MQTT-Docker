@@ -1,7 +1,7 @@
 import pyinotify
 import time
 
-log_file_path = '/home/ubuntu/mqtt/log/event.log'
+log_file_path = '/root/MQTT-Docker/log/event.log'
 last_position = 0
 
 class LogEventHandler(pyinotify.ProcessEvent):
